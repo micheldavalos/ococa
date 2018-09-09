@@ -1,5 +1,7 @@
 {
   "name": "ococa",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
