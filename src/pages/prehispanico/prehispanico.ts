@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component, ElementRef, ViewChild } from '@angular/core';
+import { IonicPage, NavController, NavParams, PopoverController } from 'ionic-angular';
+import { PageTwoPage} from "../page-two/page-two";
 
 /**
  * Generated class for the PrehispanicoPage page.
@@ -14,12 +15,21 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'prehispanico.html',
 })
 export class PrehispanicoPage {
+  @ViewChild('popoverContent', {read: ElementRef}) content: ElementRef;
+  @ViewChild('popoverText', {read: ElementRef}) text: ElementRef;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private popoverCtrl: PopoverController) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad PrehispanicoPage');
+  presentRadioPopover(ev: UIEvent) {
+    let popover = this.popoverCtrl.create(PageTwoPage, {
+      contentEle: this.content.nativeElement,
+      textEle: this.text.nativeElement
+    });
+
+    popover.present({
+      ev: ev
+    });
   }
 
 }
