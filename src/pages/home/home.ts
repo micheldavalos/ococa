@@ -4,6 +4,7 @@ import { PrehispanicoPage} from "../prehispanico/prehispanico";
 import {ConquistaPage} from "../conquista/conquista";
 import {ColoniaPage} from "../colonia/colonia";
 import {IndependenciaPage} from "../independencia/independencia";
+import {IndependientePage} from "../independiente/independiente";
 
 @Component({
   selector: 'page-home',
@@ -15,6 +16,7 @@ export class HomePage {
   conquista = ConquistaPage;
   colonia = ColoniaPage;
   independencia = IndependenciaPage;
+  independiente = IndependientePage;
 
   constructor(public navCtrl: NavController) {
 
@@ -35,6 +37,10 @@ export class HomePage {
 
   clickIndependencia(e) {
     this.navCtrl.push(this.independencia);
+  }
+
+  clickIndependiente(e) {
+    this.navCtrl.push(this.independiente);
   }
 
 }
