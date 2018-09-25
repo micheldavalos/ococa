@@ -25,13 +25,13 @@ import { NavParams } from 'ionic-angular';
           <button (click)="changeBackground('white')" ion-button="popover-dot" class="popover-dot-white" [class.selected]="background == 'white'"></button>
         </ion-col>
         <ion-col>
-          <button (click)="changeBackground('tan')" ion-button="popover-dot" class="popover-dot-tan" [class.selected]="background == 'tan'"></button>
+          <button (click)="changeBackground('tan')"   class="dot-tan" [class.selected]="background == 'tan'"></button>
         </ion-col>
         <ion-col>
-          <button (click)="changeBackground('grey')" ion-button="popover-dot" class="popover-dot-grey" [class.selected]="background == 'grey'"></button>
+          <button (click)="changeBackground('grey')"  [class.selected]="background == 'grey'"></button>
         </ion-col>
         <ion-col>
-          <button (click)="changeBackground('black')" ion-button="popover-dot" class="popover-dot-black" [class.selected]="background == 'black'"></button>
+          <button (click)="changeBackground('black')"    [class.selected]="background == 'black'"></button>
         </ion-col>
       </ion-row>
       <ion-item class="popover-text-athelas">
