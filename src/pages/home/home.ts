@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { PrehispanicoPage} from "../prehispanico/prehispanico";
 import {ConquistaPage} from "../conquista/conquista";
 import {ColoniaPage} from "../colonia/colonia";
+import {IndependenciaPage} from "../independencia/independencia";
 
 @Component({
   selector: 'page-home',
@@ -13,6 +14,7 @@ export class HomePage {
   prehispanico = PrehispanicoPage;
   conquista = ConquistaPage;
   colonia = ColoniaPage;
+  independencia = IndependenciaPage;
 
   constructor(public navCtrl: NavController) {
 
@@ -29,6 +31,10 @@ export class HomePage {
 
   clickColonia(e) {
     this.navCtrl.push(this.colonia);
+  }
+
+  clickIndependencia(e) {
+    this.navCtrl.push(this.independencia);
   }
 
 }
