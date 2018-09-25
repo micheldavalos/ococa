@@ -8,13 +8,15 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import {PrehispanicoPage} from "../pages/prehispanico/prehispanico";
 import {PageTwoPage} from "../pages/page-two/page-two";
+import {ConquistaPage} from "../pages/conquista/conquista";
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     PrehispanicoPage,
-    PageTwoPage
+    PageTwoPage,
+    ConquistaPage
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,8 @@ import {PageTwoPage} from "../pages/page-two/page-two";
     MyApp,
     HomePage,
     PrehispanicoPage,
-    PageTwoPage
+    PageTwoPage,
+    ConquistaPage
   ],
   providers: [
     StatusBar,
