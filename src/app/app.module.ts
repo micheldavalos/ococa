@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import {PrehispanicoPage} from "../pages/prehispanico/prehispanico";
 import {PageTwoPage} from "../pages/page-two/page-two";
 import {ConquistaPage} from "../pages/conquista/conquista";
+import {ColoniaPage} from "../pages/colonia/colonia";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {ConquistaPage} from "../pages/conquista/conquista";
     HomePage,
     PrehispanicoPage,
     PageTwoPage,
-    ConquistaPage
+    ConquistaPage,
+    ColoniaPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import {ConquistaPage} from "../pages/conquista/conquista";
     HomePage,
     PrehispanicoPage,
     PageTwoPage,
-    ConquistaPage
+    ConquistaPage,
+    ColoniaPage
   ],
   providers: [
     StatusBar,
