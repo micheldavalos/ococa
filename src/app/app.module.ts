@@ -12,7 +12,6 @@ import {ConquistaPage} from "../pages/conquista/conquista";
 import {ColoniaPage} from "../pages/colonia/colonia";
 import {IndependenciaPage} from "../pages/independencia/independencia";
 import {IndependientePage} from "../pages/independiente/independiente";
-import {MainPage} from "../pages/main/main";
 
 @NgModule({
   declarations: [
@@ -23,8 +22,7 @@ import {MainPage} from "../pages/main/main";
     ConquistaPage,
     ColoniaPage,
     IndependenciaPage,
-    IndependientePage,
-    MainPage
+    IndependientePage
   ],
   imports: [
     BrowserModule,
@@ -39,8 +37,7 @@ import {MainPage} from "../pages/main/main";
     ConquistaPage,
     ColoniaPage,
     IndependenciaPage,
-    IndependientePage,
-    MainPage
+    IndependientePage
   ],
   providers: [
     StatusBar,
