@@ -18,5 +18,9 @@ export class MyApp {
       splashScreen.hide();
     });
   }
+
+  openPage(page) {
+    this.rootPage = page;
+  }
 }
 
