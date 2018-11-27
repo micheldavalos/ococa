@@ -36,9 +36,16 @@
 
 
 <ion-content padding>
-  <div class="images">
-    <div class="one-image" *ngFor="let image of pre">
-      <img src="../assets/imgs/jpg/pre_{{image}}.jpg">
+  <div [ngSwitch]="dibujos">
+    <div class="images" *ngSwitchCase="'prehispanico'">
+      <div class="one-image" *ngFor="let image of pre">
+        <img src="../assets/imgs/jpg/pre_{{image}}.jpg">
+      </div>
+    </div>
+    <div class="images" *ngSwitchCase="'conquista'">
+      <div class="one-image" *ngFor="let image of con">
+        <img src="../assets/imgs/jpg/con_{{image}}.jpg">
+      </div>
     </div>
   </div>
 </ion-content>
