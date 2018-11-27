@@ -16,7 +16,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class DibujosPage {
   dibujos = 'prehispanico';
 
+  pre = [];
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    for (let i = 1; i <= 23; i++) {
+      this.pre.push(i);
+    }
   }
 
   ionViewDidLoad() {

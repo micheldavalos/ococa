@@ -36,5 +36,9 @@
 
 
 <ion-content padding>
-
+  <div class="images">
+    <div class="one-image" *ngFor="let image of pre">
+      <img src="../assets/imgs/jpg/pre_{{image}}.jpg">
+    </div>
+  </div>
 </ion-content>
