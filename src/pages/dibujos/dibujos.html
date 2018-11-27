@@ -47,5 +47,10 @@
         <img src="../assets/imgs/jpg/con_{{image}}.jpg">
       </div>
     </div>
+    <div class="images" *ngSwitchCase="'colonia'">
+      <div class="one-image" *ngFor="let image of col">
+        <img src="../assets/imgs/jpg/col_{{image}}.jpg">
+      </div>
+    </div>
   </div>
 </ion-content>

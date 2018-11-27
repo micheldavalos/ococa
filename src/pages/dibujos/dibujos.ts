@@ -18,6 +18,7 @@ export class DibujosPage {
 
   pre = [];
   con = [];
+  col = [];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     for (let i = 1; i <= 23; i++) {
@@ -26,6 +27,10 @@ export class DibujosPage {
     for (let i = 1; i <= 13; i++) {
       this.con.push(i);
     }
+    for (let i = 1; i <= 10; i++) {
+      this.col.push(i);
+    }
+
   }
 
   ionViewDidLoad() {
