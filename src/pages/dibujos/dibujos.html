@@ -52,5 +52,15 @@
         <img src="../assets/imgs/jpg/col_{{image}}.jpg">
       </div>
     </div>
+    <div class="images" *ngSwitchCase="'independencia'">
+      <div class="one-image" *ngFor="let image of ind">
+        <img src="../assets/imgs/jpg/i_{{image}}.jpg">
+      </div>
+    </div>
+    <div class="images" *ngSwitchCase="'independiente'">
+      <div class="one-image" *ngFor="let image of u">
+        <img src="../assets/imgs/jpg/u_{{image}}.jpg">
+      </div>
+    </div>
   </div>
 </ion-content>
