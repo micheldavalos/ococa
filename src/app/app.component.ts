@@ -10,6 +10,7 @@ import {DibujosPage} from "../pages/dibujos/dibujos";
 })
 export class MyApp {
   rootPage:any = HomePage;
+  home = HomePage;
   dibujos: any = DibujosPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {

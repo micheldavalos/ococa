@@ -6,9 +6,16 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Dibujos</ion-title>
-  </ion-navbar>
+  <ion-toolbar>
+    <ion-buttons start>
+      <button ion-button icon-only menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>
+      Dibujos
+    </ion-title>
+  </ion-toolbar>
 
   <ion-toolbar no-border-top>
     <ion-segment [(ngModel)]="dibujos">
