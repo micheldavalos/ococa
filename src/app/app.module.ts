@@ -13,6 +13,8 @@ import {ColoniaPage} from "../pages/colonia/colonia";
 import {IndependenciaPage} from "../pages/independencia/independencia";
 import {IndependientePage} from "../pages/independiente/independiente";
 import {DibujosPage} from "../pages/dibujos/dibujos";
+import {VideoPage} from "../pages/video/video";
+import {StreamingMedia} from "@ionic-native/streaming-media";
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import {DibujosPage} from "../pages/dibujos/dibujos";
     ColoniaPage,
     IndependenciaPage,
     IndependientePage,
-    DibujosPage
+    DibujosPage,
+    VideoPage
   ],
   imports: [
     BrowserModule,
@@ -40,12 +43,14 @@ import {DibujosPage} from "../pages/dibujos/dibujos";
     ColoniaPage,
     IndependenciaPage,
     IndependientePage,
-    DibujosPage
+    DibujosPage,
+    VideoPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    StreamingMedia
   ]
 })
 export class AppModule {}
