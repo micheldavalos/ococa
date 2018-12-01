@@ -15,6 +15,7 @@ import {IndependientePage} from "../pages/independiente/independiente";
 import {DibujosPage} from "../pages/dibujos/dibujos";
 import {RedesPage} from "../pages/redes/redes";
 import {AboutPage} from "../pages/about/about";
+import {ScreenOrientation} from "@ionic-native/screen-orientation";
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import {AboutPage} from "../pages/about/about";
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ScreenOrientation
   ]
 })
 export class AppModule {}
