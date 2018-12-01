@@ -46,7 +46,7 @@
   <div [ngSwitch]="dibujos">
     <div class="images" *ngSwitchCase="'prehispanico'">
       <div class="one-image" *ngFor="let image of pre">
-        <img src="../assets/imgs/jpg/pre_{{image}}.jpg">
+        <img src="{{image.url}}" (click)="clickPre(image)">
       </div>
     </div>
     <div class="images" *ngSwitchCase="'conquista'">

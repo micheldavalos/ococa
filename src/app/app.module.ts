@@ -17,6 +17,9 @@ import {RedesPage} from "../pages/redes/redes";
 import {AboutPage} from "../pages/about/about";
 import {ScreenOrientation} from "@ionic-native/screen-orientation";
 
+import * as ionicGalleryModal from 'ionic-gallery-modal';
+import { HAMMER_GESTURE_CONFIG } from '@angular/platform-browser';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -33,7 +36,8 @@ import {ScreenOrientation} from "@ionic-native/screen-orientation";
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    ionicGalleryModal.GalleryModalModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -53,7 +57,11 @@ import {ScreenOrientation} from "@ionic-native/screen-orientation";
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    ScreenOrientation
+    ScreenOrientation,
+    {
+      provide: HAMMER_GESTURE_CONFIG,
+      useClass: ionicGalleryModal.GalleryModalHammerConfig,
+    }
   ]
 })
 export class AppModule {}
