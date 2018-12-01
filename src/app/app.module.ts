@@ -13,6 +13,7 @@ import {ColoniaPage} from "../pages/colonia/colonia";
 import {IndependenciaPage} from "../pages/independencia/independencia";
 import {IndependientePage} from "../pages/independiente/independiente";
 import {DibujosPage} from "../pages/dibujos/dibujos";
+import {RedesPage} from "../pages/redes/redes";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {DibujosPage} from "../pages/dibujos/dibujos";
     ColoniaPage,
     IndependenciaPage,
     IndependientePage,
-    DibujosPage
+    DibujosPage,
+    RedesPage
   ],
   imports: [
     BrowserModule,
@@ -40,7 +42,8 @@ import {DibujosPage} from "../pages/dibujos/dibujos";
     ColoniaPage,
     IndependenciaPage,
     IndependientePage,
-    DibujosPage
+    DibujosPage,
+    RedesPage
   ],
   providers: [
     StatusBar,
