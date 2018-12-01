@@ -26,19 +26,19 @@ export class DibujosPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public m: ModalController) {
     for (let i = 1; i <= 27; i++) {
-      this.pre.push({url: '../assets/imgs/jpg/pre_' + i + '.jpg', type: 'Prehispánico'});
+      this.pre.push({url: '../assets/imgs/jpg/pre_' + i + '.jpg', type: ''});
     }
     for (let i = 1; i <= 13; i++) {
-      this.con.push(i);
+      this.con.push({url: '../assets/imgs/jpg/con_' + i + '.jpg', type: ''});
     }
     for (let i = 1; i <= 10; i++) {
-      this.col.push(i);
+      this.col.push({url: '../assets/imgs/jpg/col_' + i + '.jpg', type: ''});
     }
     for (let i = 1; i <= 9; i++) {
-      this.ind.push(i);
+      this.ind.push({url: '../assets/imgs/jpg/i_' + i + '.jpg', type: ''});
     }
     for (let i = 1; i <= 33; i++) {
-      this.u.push(i);
+      this.u.push({url: '../assets/imgs/jpg/u_' + i + '.jpg', type: ''});
     }
 
   }
@@ -55,5 +55,37 @@ export class DibujosPage {
     });
     modal.present();
   }
+  clickCon(image) {
+    let index = this.con.findIndex(i => i == image);
+    let modal = this.m.create(GalleryModal, {
+      photos: this.con,
+      initialSlide: index
+    });
+    modal.present();
+  }
+  clickCol(image) {
+    let index = this.col.findIndex(i => i == image);
+    let modal = this.m.create(GalleryModal, {
+      photos: this.col,
+      initialSlide: index
+    });
+    modal.present();
+  }
+  clickInd(image) {
+    let index = this.ind.findIndex(i => i == image);
+    let modal = this.m.create(GalleryModal, {
+      photos: this.ind,
+      initialSlide: index
+    });
+    modal.present();
+  }
+  clickU(image) {
+      let index = this.u.findIndex(i => i == image);
+      let modal = this.m.create(GalleryModal, {
+        photos: this.u,
+        initialSlide: index
+      });
+      modal.present();
+    }
 
 }
